@@ -1,0 +1,314 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 25,
+        "name": "Title of your scenario",
+        "description": "",
+        "id": "complete-scenario-for-user-administration.;title-of-your-scenario;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 80398850,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I am requesting \"BaseDummyRestAPI\".",
+            "match": {
+              "arguments": [
+                {
+                  "val": "BaseDummyRestAPI",
+                  "offset": 17
+                }
+              ],
+              "location": "StepDefinition.i_am_requesting(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2750334,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I use resource \"/create\" and with body parameters as",
+            "match": {
+              "arguments": [
+                {
+                  "val": "/create",
+                  "offset": 16
+                }
+              ],
+              "location": "StepDefinition.i_use_resource_and_with_body_parameters_as(String,DataTable)"
+            },
+            "matchedColumns": [
+              0,
+              1,
+              2
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "Dubey7",
+                  "70000",
+                  "28"
+                ],
+                "line": 8
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2043273637,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I am sending the \"POST\" request.",
+            "match": {
+              "arguments": [
+                {
+                  "val": "POST",
+                  "offset": 18
+                }
+              ],
+              "location": "StepDefinition.i_am_sending_the_request(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 10,
+            "name": "I am validating object \"name\" for String value Dubey7.",
+            "match": {},
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 11,
+            "name": "I am validating object \"age\" for String value 28.",
+            "match": {},
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "I am saving the value from the object \"id\" as variable.",
+            "match": {
+              "arguments": [
+                {
+                  "val": "id",
+                  "offset": 39
+                }
+              ],
+              "location": "StepDefinition.i_am_saving_the_value_from_the_object_as_variable(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "I go to \"/employee/\" with above variable and post \"GET\" Request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "/employee/",
+                  "offset": 9
+                },
+                {
+                  "val": "GET",
+                  "offset": 51
+                }
+              ],
+              "location": "StepDefinition.i_go_to_with_above_variable_and_post_Request(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "I use resource \"/update/\" and with above variable and body parameters as",
+            "match": {
+              "arguments": [
+                {
+                  "val": "/update/",
+                  "offset": 16
+                }
+              ],
+              "location": "StepDefinition.i_use_resource_and_with_above_variable_and_body_parameters_as(String,DataTable)"
+            },
+            "matchedColumns": [
+              0,
+              1,
+              3
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "Dubey7",
+                  "70000",
+                  "31"
+                ],
+                "line": 15
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 16,
+            "name": "I am sending the \"Put\" request.",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Put",
+                  "offset": 18
+                }
+              ],
+              "location": "StepDefinition.i_am_sending_the_request(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 17,
+            "name": "I go to \"/employee/\" with above variable and post \"GET\" Request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "/employee/",
+                  "offset": 9
+                },
+                {
+                  "val": "GET",
+                  "offset": 51
+                }
+              ],
+              "location": "StepDefinition.i_go_to_with_above_variable_and_post_Request(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 18,
+            "name": "I am validating object \"employee_age\" for String value 31.",
+            "match": {},
+            "matchedColumns": [
+              3
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 19,
+            "name": "I go to \"/delete/\" with above variable and post \"delete\" Request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "/delete/",
+                  "offset": 9
+                },
+                {
+                  "val": "delete",
+                  "offset": 49
+                }
+              ],
+              "location": "StepDefinition.i_go_to_with_above_variable_and_post_Request(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 20,
+            "name": "I am validating object \"success.text\" for String value \"successfully! deleted Records\".",
+            "match": {
+              "arguments": [
+                {
+                  "val": "success.text",
+                  "offset": 24
+                },
+                {
+                  "val": "successfully! deleted Records",
+                  "offset": 56
+                }
+              ],
+              "location": "StepDefinition.i_am_validating_object_for_String_value(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 21,
+            "name": "I go to \"/employee/\" with above variable and post \"GET\" Request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "/employee/",
+                  "offset": 9
+                },
+                {
+                  "val": "GET",
+                  "offset": 51
+                }
+              ],
+              "location": "StepDefinition.i_go_to_with_above_variable_and_post_Request(String,String)"
+            },
+            "keyword": "When "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@tag"
+          },
+          {
+            "line": 4,
+            "name": "@tag1"
+          }
+        ]
+      }
+    ],
+    "name": "Complete Scenario for User Administration.",
+    "description": "",
+    "id": "complete-scenario-for-user-administration.",
+    "keyword": "Feature",
+    "uri": "D:/Cucumber/Demo.API/src/main/resources/feature/Complete_Scenario.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@tag"
+      }
+    ]
+  }
+]

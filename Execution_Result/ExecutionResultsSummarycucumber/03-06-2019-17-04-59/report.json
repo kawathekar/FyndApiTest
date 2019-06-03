@@ -1,0 +1,79 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 5,
+        "name": "Title of your scenario",
+        "description": "",
+        "id": "complete-scenario-for-user-administration.;title-of-your-scenario",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 6,
+            "name": "I am requesting \"BaseDummyRestAPI\".",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 7,
+            "name": "I use resource \"/create\" and with body parameters as",
+            "match": {},
+            "rows": [
+              {
+                "cells": [
+                  "name",
+                  "salary",
+                  "age"
+                ],
+                "line": 8
+              },
+              {
+                "cells": [
+                  "Morai",
+                  "70000",
+                  "28"
+                ],
+                "line": 9
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 10,
+            "name": "I am sending the \"POST\" request.",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 4,
+            "name": "@tag1"
+          }
+        ]
+      }
+    ],
+    "name": "Complete Scenario for User Administration.",
+    "description": "",
+    "id": "complete-scenario-for-user-administration.",
+    "keyword": "Feature",
+    "uri": "D:/Cucumber/Demo.API/src/main/resources/feature/Complete_Scenario.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@tag"
+      }
+    ]
+  }
+]
